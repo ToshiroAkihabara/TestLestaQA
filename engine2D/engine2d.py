@@ -50,15 +50,15 @@ class Engine2D:
         colors = ("Orange", "Blue", "Green", "Gold", "Red", "Yellow")
         cls.__COLOR = random.choice(colors)
     
-    classmethod
+    @classmethod
     def get_circle(cls, color: str, radius: int):
         return cls.__Circle(color=color, radius=radius)
     
-    classmethod
+    @classmethod
     def get_triangle(cls, color: str, height: int, width: int):
         return cls.__Triangle(color=color, height=height, width=width)
     
-    classmethod
+    @classmethod
     def get_rectangle(cls, color: str, length: int, width: int):
         return cls.__Rectangle(color=color,length=length, width=width)
     
